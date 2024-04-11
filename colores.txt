@@ -1,0 +1,7 @@
+Esta es la paleta final de colores establecida, si no te gusta cerras el opi y se usa igual
+
+rosa pastel: #D88C9A
+salmon: #F2D0A9
+crema: #F1E3D3
+lila: #8E7DBE
+verde marino: #99C1B9

@@ -1,0 +1,179 @@
+body {
+    font: 1em/1.618 Inter, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0;
+    color: #224;
+    background: url("/medios/backgroundWeb.png") center/cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+header {
+    height: 25%;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D88C9A;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.logo  {
+    border-radius: 10px;
+    width: 8%; 
+    height: auto; 
+}
+.logo img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile{
+    width: 8%;
+    
+    
+}
+.profile img {
+    border-radius: 50%;
+   width: 100%;
+    height: auto; 
+    box-shadow: 2px 1px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    height: 50%;
+}
+
+.container ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 22px;
+}
+
+.container ul li {
+    position: relative;
+    list-style-type: none;
+    margin-right: 50px;
+    cursor: pointer;
+    color: #F8F8F8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+
+.container ul li:last-child {
+    margin-right: 0px;
+}
+
+.container ul li:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    height: 100%;
+    width: 100%;
+}
+
+.container ul li:nth-child(1):after {
+    background: #8E7DBE;
+    clip-path: polygon(6% 10%, 100% 0, 64% 65%, 28% 65%);
+}
+
+.container ul li:nth-child(2):after {
+    background: #F1E3D3;
+    clip-path: polygon(61% 0%, 100% 19%, 71% 100%, 0% 100%);
+}
+
+.container ul li:nth-child(3):after {
+    background: #F2D0A9;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 57%);
+}
+
+.container ul li:nth-child(4):after {
+    background: #D88C9A;
+    clip-path: polygon(0% 40%, 100% 0%, 100% 99%, 19% 100%);
+}
+
+.container ul li:hover:after {
+    animation: boink 1s ease forwards 1;
+}
+
+@keyframes boink {
+    80% {
+        transform: scaleX(1.9) scaleY(0.6) translateX(-30%);
+    }
+}
+
+@media (max-width: 600px) {
+    .container ul li {
+        font-size: 15px;
+    }
+    
+    body{
+     background: url("/medios/backgroundWeb.png") center/cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+  
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #F8F8F8;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos específicos para los iconos de redes sociales (puedes usar tus propios iconos aquí) */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Sombras de colores pasteles */
+.footer-section {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cambia el valor de rgba para el color y la opacidad */
+    background-color: #F8F8F8; /* Color de fondo del footer */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.menuGlobal{
+    display: flex;
+    justify-content: space-between;
+
+}
