@@ -1,7 +1,6 @@
 body {
     font: 1em/1.618 Inter, sans-serif;
-    display: flex;
-    align-items: center;
+    display: flex;    
     justify-content: center;
     min-height: 100vh;
     padding: 30px;
@@ -17,8 +16,7 @@ body {
 header {
     height: 25%;
     padding: 20px;
-    display: flex;
-    
+    display: flex;    
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #D88C9A;
@@ -120,7 +118,7 @@ header {
     .container ul li {
         font-size: 15px;
     }
-    
+
     body{
      background: url("/medios/backgroundWeb.png") center/cover;
     background-repeat: no-repeat;
@@ -174,6 +172,12 @@ footer {
 
 .menuGlobal{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
+    
+
+}
+
+.mobile-menu {
+    display: none;
 }
