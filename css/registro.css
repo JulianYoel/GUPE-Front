@@ -1,0 +1,85 @@
+/* Estilos generales */
+/* Estilos generales */
+.registroDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tarjetaRegistro {
+    background-color: #f0e6f7;
+    border: solid 1px #52307c;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 400px; /* Ancho máximo aumentado */
+    width: 100%; /* Ajuste de ancho */
+    text-align: center; /* Centrado del contenido */
+}
+
+.tarjetaRegistro:hover {
+    transform: scale(1.1);
+}
+
+.listaIFTS,
+.genero,
+.cumpleanos {
+    margin-top: 20px;
+}
+
+
+h2,
+p,
+label {
+    color: #000000;
+}
+
+input[type="text"],
+select,
+input[type="radio"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluir el relleno en el ancho */
+}
+
+/* Ajustes para el input de fecha */
+input[type="date"] {
+    max-width: calc(100% - 22px); /* Ancho ajustado */
+}
+
+/* Estilo para el hover en los radios */
+input[type="radio"]:hover + label {
+    background-color: #d0c1e1;
+}
+
+/* Estilo para el hover en los inputs */
+input[type="text"]:hover,
+select:hover,
+input[type="date"]:hover {
+    background-color: #d0c1e1;
+}
+
+/* Ajuste de margen entre secciones */
+.listaIFTS,
+.genero,
+.cumpleanos {
+    margin-top: 30px; /* Mayor margen entre secciones */
+}
+
+.genero label{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#genero{
+    margin-top: 5px;
+}

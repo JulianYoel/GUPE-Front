@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="./css/querys.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <main>
+
+
+<div class="divImagenyForm">
+  <section class="loginHome">  
+    <div class="container">
+    <div class="switch-container">
+      <p id="leftLabel">Ingresar</p>
+      <label class="switch">
+        <input type="checkbox" id="switchButton" onclick="switchForm()">
+        <span class="slider"></span>
+      </label>
+      <p id="rightLabel">Cuenta Nueva</p>
+    </div>
+    
+    <div class="form-container">
+      <div class="card" id="loginCard">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+          <input type="text" placeholder="Usuario" id="username" required>
+          <input type="password" placeholder="Contraseña" id="password" required>
+          <button type="submit" id="loginButton">Ingresar</button>
+        </form>
+        <p>O inicia sesión con</p>
+        <button onclick="googleLogin()" id="googleboton">Google</button>
+      </div>   
+    </div>
+    
+    <div class="form-container">
+      <div class="card" id="registerCard" style="display: none;">
+        <h2>Registro</h2>
+        <form id="registerForm">
+          <input type="text" placeholder="Usuario" id="regUsername" required>
+          <input type="password" placeholder="Contraseña" id="regPassword" required>
+          <select id="userType">
+            <option value="visitante">Visitante</option>
+            <option value="alumno">Alumno</option>
+            <option value="docente">Docente</option>
+          </select>
+          <button type="submit" id="registerButton">Crear Cuenta</button>
+        </form>
+        <p>O regístrate con</p>
+        <button onclick="googleLogin()" id="googleboton">Google</button>
+      </div>
+        </div>
+  </div>   
+  </section>
+
+  <section class="seccionImagen">
+    <div class="divImg">
+      <img src="./medios/login.jpeg" alt="Imagen de Login" class="form-image">
+    </div>
+  </section>
+</div>
+
+  </main>
+    <script src="script.js"></script>   
+</body>
+</html>

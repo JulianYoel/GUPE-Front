@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="./css/registro.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="registroDiv">
+        <div class="tarjetaRegistro">
+            <h2>Registro</h2>
+            <p>Nombre De Usuario</p>
+            <input type="text" >
+            <div class="listaIFTS">
+             <label for="opciones">A qué IFTS pertenece:</label>
+                <select id="opciones" name="opciones">
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                    <option value="opcion4">Opción 4</option>
+                </select>
+            </div>
+            <div class="genero">
+            <label for="genero">Género:</label>
+                <div id="genero">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    
+                    <label for="otro">Otro</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    
+                </div>
+                </div>
+                <div class="cumpleanos">
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
