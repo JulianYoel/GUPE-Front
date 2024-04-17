@@ -2,8 +2,9 @@ body {
     font: 1em/1.618 Inter, sans-serif;
     display: flex;    
     justify-content: center;
+    
     min-height: 100vh;
-    padding: 30px;
+    padding: 10px;
     margin: 0;
     color: #224;
     background: url("/medios/backgroundWeb.png") center/cover;
@@ -14,11 +15,13 @@ body {
 
 
 header {
-    height: 25%;
+    width: 95%;
+    height: 5EM;
     padding: 20px;
     display: flex;    
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    align-content: center;
     border-bottom: 1px solid #D88C9A;
     border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -29,17 +32,18 @@ header {
 
 .logo  {
     border-radius: 10px;
-    width: 8%; 
+    width: 10%; 
     height: auto; 
+    align-content: center;
 }
 .logo img{
-    width: 100%;
+    width: 110%;
     border-radius: 20px;
     box-shadow: 2px 1px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .profile{
-    width: 8%;
+    width: 10%;
     
     
 }
@@ -51,20 +55,27 @@ header {
 }
 
 .container {
-    height: 50%;
+    width:auto;
+    justify-content: center;
+   
+   
 }
 
 .container ul {
     display: flex;
     justify-content: center; 
     align-items: center;
-    font-size: 22px;
+    font-size: 2vw;   
+    width: 100%;
+
+        
 }
 
 .container ul li {
+    display: flex;
+    font-size: 100%;
     position: relative;
-    list-style-type: none;
-    margin-right: 50px;
+    list-style-type: none;    
     cursor: pointer;
     color: #F8F8F8;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
@@ -114,19 +125,6 @@ header {
     }
 }
 
-@media (max-width: 600px) {
-    .container ul li {
-        font-size: 15px;
-    }
-
-    body{
-     background: url("/medios/backgroundWeb.png") center/cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-  
-}
-
 /* Estilos para el footer */
 footer {
     background-color: #F8F8F8;
@@ -134,18 +132,24 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.footer-container {
+    height: 15%;
+    align-content: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+
 .footer-section {
     flex: 1;
     text-align: center;
 }
+.footer-section p {
+  font-size: 0.9em;
+  text-align: center;
+}
+
 
 .social-icons {
     display: flex;
@@ -161,23 +165,10 @@ footer {
     margin-right: 10px;
 }
 
-/* Sombras de colores pasteles */
 .footer-section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cambia el valor de rgba para el color y la opacidad */
     background-color: #F8F8F8; /* Color de fondo del footer */
     padding: 20px;
     border-radius: 10px;
-}
-
-
-.menuGlobal{
-    display: flex;
-    justify-content: space-evenly;
-
-    
-
-}
-
-.mobile-menu {
-    display: none;
+    font-size: 0.7em;
 }
