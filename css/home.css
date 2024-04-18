@@ -1,0 +1,36 @@
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .titulo-seccion {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .seccion {
+    display: none;
+    width: 100%;
+  }
+  
+  .lista {
+    flex: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 0;
+}
+  
+  .mapa {
+    background-color: lightgray;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
