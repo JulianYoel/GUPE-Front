@@ -1,0 +1,118 @@
+.container {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #D88C9A;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+     background-color: rgba(255, 255, 255, 0.45);
+     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+.titulo-seccion {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+.seccion {
+    display: none;
+    width: 100%;
+    
+  }
+
+.divLocalizaciones{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+
+.listaYmapa{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 90%;
+  padding: 20px;}
+  
+.lista {
+  width: 20%;
+    flex: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5%;
+}
+  
+.mapa {
+  width: 50%;
+  border-radius: 20px;
+    background-color: lightgray;
+    padding: 20px;
+  }
+
+buttton{
+  border-radius: 10px;
+  
+}
+
+  /* tarjeta opiniones */
+  
+.tarjetaOpinion{
+    margin: 2%;
+    display: flex;
+    max-height: 350px;
+    border-bottom: 1px solid #D88C9A;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+     background-color: rgba(255, 255, 255, 0.45);
+     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+
+  }
+
+.imgOpinion{
+  width: 15%;
+  height: auto;
+  margin: auto;
+
+}
+.tarjetaOpinion img{
+width: 100%;
+border-radius: 20px;
+padding: 10px;
+}
+
+.textosOpinion{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+}
+.tarjetaOpinion p{
+  font-size: 0.8em;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+}
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

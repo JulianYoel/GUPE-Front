@@ -1,8 +1,7 @@
 body {
     font: 1em/1.618 Inter, sans-serif;
     display: flex;    
-    justify-content: center;
-    
+    justify-content: center;    
     min-height: 100vh;
     padding: 10px;
     margin: 0;
@@ -101,7 +100,7 @@ header {
 
 .container ul li:nth-child(1):after {
     background: #8E7DBE;
-    clip-path: polygon(6% 10%, 100% 0, 64% 65%, 28% 65%);
+    clip-path: polygon(6% 10%, 100% 0, 64% 65%, 28% 100%);
 }
 
 .container ul li:nth-child(2):after {
@@ -111,7 +110,7 @@ header {
 
 .container ul li:nth-child(3):after {
     background: #F2D0A9;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 57%);
+    clip-path: polygon(10% 0%, 100% 0%, 70% 99%, 0% 57%);
 }
 
 .container ul li:nth-child(4):after {
@@ -125,7 +124,7 @@ header {
 
 @keyframes boink {
     80% {
-        transform: scaleX(1.9) scaleY(0.6) translateX(-30%);
+        transform: scaleX(1.5) scaleY(1.6) translateX(-30%);
     }
 }
 
