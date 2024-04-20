@@ -69,7 +69,7 @@ buttton{
 .tarjetaOpinion{
     margin: 2%;
     display: flex;
-    max-height: 350px;
+    max-height: 150px;
     border-bottom: 1px solid #D88C9A;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px;
@@ -80,7 +80,7 @@ buttton{
   }
 
 .imgOpinion{
-  width: 15%;
+  width: 5%;
   height: auto;
   margin: auto;
 
