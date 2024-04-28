@@ -1,0 +1,63 @@
+.SeccionIfts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.ifts{
+    height: 70vh;
+    width: 90%;
+    gap: 15px;
+    overflow-y: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;  
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    justify-content: center;
+}
+
+.tarjetaIfts{ 
+   
+    height: 20vh;
+    width: 380px;
+    background-color: #F2D0A9;
+    border-radius: 10px;
+    display: flex;
+   margin: 10px auto;
+}
+
+.imgTarjetaIfts{
+    width: 45%;
+    height: 15vh;
+    margin: auto;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.imgTarjetaIfts img{
+    width: 100%;
+}
+
+.divBotonesTarjeta{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2px;
+    justify-content: center;
+    align-content: space-around;
+    }
+
+.divBotonesTarjeta button{
+    border-radius: 5px;
+    background-color: zrgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    font-size: 100%;
+
+}
